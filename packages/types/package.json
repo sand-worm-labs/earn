@@ -1,0 +1,30 @@
+{
+  "name": "@earn/types",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/escrow/index.js",
+  "types": "./dist/escrow/index.d.ts",
+  "exports": {
+    "./escrow": {
+      "types": "./dist/escrow/index.d.ts",
+      "default": "./dist/escrow/index.js"
+    }
+  },
+  "files": [
+    "./dist/**"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "dev": "pnpm build --watch",
+    "build": "tsc -b -v",
+    "lint": "eslint \"{src,test}/**/*.ts\""
+  },
+  "dependencies": {
+    "viem": "^2.57.2"
+  },
+  "devDependencies": {
+    "@sandworm/typescript-config": "npm:@sand-worm-labs/typescript-config@^0.1.0",
+    "@types/node": "^24.7.0",
+    "typescript": "^5.9.3"
+  }
+}

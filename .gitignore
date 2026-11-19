@@ -1,0 +1,68 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Local env files
+.env
+.env.*
+!.env.example
+sandworm-*.env
+
+# Testing
+coverage
+
+# Turbo
+.turbo
+
+# Vercel
+.vercel
+
+# Build Outputs
+.next/
+out/
+build
+dist
+tsconfig.tsbuildinfo
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Debug
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Monitoring
+.clinic/
+
+# Misc
+.DS_Store
+*.pem
+
+logdy
+# Backups of the env files (contain credentials)
+sandworm-*.env.bak*
+
+# Generated fresh from $ROOT_DIR by scripts/start-prod.sh and
+# scripts/rebuild.sh on every run — committing it just bakes in whichever
+# machine last ran one of those scripts (e.g. a dev's laptop paths).
+ecosystem.config.js
