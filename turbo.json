@@ -59,13 +59,13 @@
       ]
     },
     "test:e2e": {},
-    "@sandworm/postgresql-typeorm#migration:up": {
+    "@earn/postgresql-typeorm#migration:up": {
       "cache": false
     },
-    "@sandworm/postgresql-typeorm#migration:down": {
+    "@earn/postgresql-typeorm#migration:down": {
       "cache": false
     },
-    "@sandworm/postgresql-typeorm#migration:generate": {
+    "@earn/postgresql-typeorm#migration:generate": {
       "cache": false
     }
   }
